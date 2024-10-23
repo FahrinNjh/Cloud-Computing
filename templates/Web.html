@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Kelompok</title>
+    <style>
+        body {
+            font-family: Norwester, Cursive;
+            background-color: #1D3752;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        h1 {
+            text-align: center;
+            color: #50BFC3;
+        }
+        .card {
+            background-color: #50BFC3;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .card img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+        }
+        .card-content {
+            flex: 1;
+        }
+        .card-content h2 {
+            color: #333;
+            margin: 0 0 10px;
+        }
+        .card-content p {
+            margin: 5px 0;
+        }
+        .card-content .education {
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Biodata Kelompok</h1>
+
+        <!-- Anggota 1 -->
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Fahrin.jpg') }}" alt="Foto Profil Anggota 1">
+            <div class="card-content">
+                <h2>Fahrin Najah El Hami</h2>
+                <p><strong>NIM:</strong> 22.83.0940</p>
+                <p class="education"><strong>Education:</strong> S1 Teknik Komputer</p>
+                <p>Saya mahasiswa Universitas Amikom Yogyakarta angkatan 2022 yang berasal dari Tasikmalaya, Hobi bermain Game dan Membaca</p>
+            </div>
+        </div>
+
+        <!-- Anggota 2 -->
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Alan.jpg') }}" alt="Foto Profil Anggota 2">
+            <div class="card-content">
+                <h2>Muhammad Maulana Furqon</h2>
+                <p><strong>NIM:</strong> 22.83.0937</p>
+                <p class="education"><strong>Education:</strong> S1 Teknik Komputer</p>
+                <p>Saya mahasiswa Universitas Amikom Yogyakarta angkatan 2022 yang berasal dari Pekalongan yang gemar bermain game & scroll sosmed</p>
+            </div>
+        </div>
+
+        <!-- Anggota 3 -->
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Waskito.jpg') }}" alt="Foto Profil Anggota 3">
+            <div class="card-content">
+                <h2>Waskito Agung Wahyu Pratomo</h2>
+                <p><strong>NIM:</strong> 22.83.0923</p>
+                <p class="education"><strong>Education:</strong> S1 Teknik Komputer.</p>
+                <p>Saya mahasiswa Universitas Amikom Yogyakarta angkatan 2022 yang berasal dari Klaten, Hobi menggambar, memasak dan menyebrang jalan.</p>
+            </div>
+        </div>
+
+        <!-- Anggota 4 -->
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/raffi.jpg') }}" alt="Foto Profil Anggota 4">
+            <div class="card-content">
+                <h2>Muhammad Raffi Adhipramana Putra Yuswito</h2>
+                <p><strong>NIM:</strong> 22.83.0896</p>
+                <p class="education"><strong>Education:</strong> S1 Teknik Komputer</p>
+                <p>Saya mahasiswa Universitas Amikom Yogyakarta angkatan 2022 yang berasal dari Yogyakarta, Hobi Foto                </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
